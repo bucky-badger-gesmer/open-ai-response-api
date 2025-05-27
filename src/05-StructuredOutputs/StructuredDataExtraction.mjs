@@ -19,7 +19,7 @@ const response = await openai.responses.parse({
       content:
         "You are an expert at structured data extraction. You will be given unstructured text from a research paper and should convert it into the given structure.",
     },
-    { role: "user", content: "poopy scoopy scoop tastes so good" },
+    { role: "user", content: "The mitochondria is the powerhouse of a cell" },
   ],
   text: {
     format: zodTextFormat(ResearchPaperExtraction, "research_paper_extraction"),
